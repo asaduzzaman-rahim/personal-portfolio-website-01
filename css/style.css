@@ -196,9 +196,6 @@
       max-width: 96rem;
     }
   }
-  .m-\[8px\] {
-    margin: 8px;
-  }
   .container {
     margin-inline: auto;
     padding-inline: 2rem;
@@ -209,47 +206,17 @@
   .flex {
     display: flex;
   }
-  .table {
-    display: table;
-  }
   .h-\[8px\] {
     height: 8px;
-  }
-  .h-\[24px\] {
-    height: 24px;
   }
   .w-\[8px\] {
     width: 8px;
   }
-  .w-\[24\] {
-    width: 24;
-  }
-  .w-\[24px\] {
-    width: 24px;
-  }
-  .w-\[400px\] {
-    width: 400px;
-  }
-  .max-w-\[400px\] {
-    max-width: 400px;
-  }
   .max-w-\[768px\] {
     max-width: 768px;
   }
-  .min-w-\[400px\] {
-    min-width: 400px;
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
-  }
-  .flex-row-reverse {
-    flex-direction: row-reverse;
   }
   .flex-wrap-reverse {
     flex-wrap: wrap-reverse;
@@ -265,9 +232,6 @@
   }
   .justify-center {
     justify-content: center;
-  }
-  .gap-1 {
-    gap: calc(var(--spacing) * 1);
   }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
@@ -291,22 +255,11 @@
       margin-block-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-y-reverse)));
     }
   }
-  .space-x-2 {
-    :where(& > :not(:last-child)) {
-      --tw-space-x-reverse: 0;
-      margin-inline-start: calc(calc(var(--spacing) * 2) * var(--tw-space-x-reverse));
-      margin-inline-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-x-reverse)));
-    }
-  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
   .rounded-full {
     border-radius: calc(infinity * 1px);
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
   }
   .bg-\[\#10B981\] {
     background-color: #10B981;
@@ -314,26 +267,14 @@
   .bg-\[\#111827\] {
     background-color: #111827;
   }
-  .bg-\[\#\] {
-    background-color: #;
-  }
-  .p-1 {
-    padding: calc(var(--spacing) * 1);
-  }
   .p-1\.5 {
     padding: calc(var(--spacing) * 1.5);
-  }
-  .p-\[8px\] {
-    padding: 8px;
   }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
-  }
-  .py-1 {
-    padding-block: calc(var(--spacing) * 1);
   }
   .py-1\.5 {
     padding-block: calc(var(--spacing) * 1.5);
@@ -346,9 +287,6 @@
   }
   .py-24 {
     padding-block: calc(var(--spacing) * 24);
-  }
-  .pt-12 {
-    padding-top: calc(var(--spacing) * 12);
   }
   .text-2xl {
     font-size: var(--text-2xl);
@@ -381,27 +319,12 @@
   .\!text-gray5 {
     color: var(--color-gray5) !important;
   }
-  .text-gray5 {
-    color: var(--color-gray5);
-  }
   .text-gray6 {
     color: var(--color-gray6);
-  }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .md\:min-w-\[400px\] {
     @media (width >= 768px) {
       min-width: 400px;
-    }
-  }
-  .lg\:flex-row {
-    @media (width >= 990px) {
-      flex-direction: row;
     }
   }
   .lg\:flex-nowrap {
@@ -425,16 +348,6 @@ body {
   inherits: false;
   initial-value: 0;
 }
-@property --tw-space-x-reverse {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
-}
-@property --tw-border-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-leading {
   syntax: "*";
   inherits: false;
@@ -447,21 +360,13 @@ body {
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-space-y-reverse: 0;
-      --tw-space-x-reverse: 0;
-      --tw-border-style: solid;
       --tw-leading: initial;
       --tw-font-weight: initial;
       --tw-tracking: initial;
-      --tw-outline-style: solid;
     }
   }
 }
