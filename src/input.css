@@ -38,7 +38,10 @@ body{
 
 @layer components {
     .heading{
-        @apply py-1 px-5 text-base text-gray6 leading-6 w-[105px] bg-gray2 text-center rounded-[12px] 
+        @apply py-2 px-5 text-base text-gray6 leading-6 w-[105px] bg-gray2 text-center rounded-[12px] 
     }
 }
 /* --- Custom styles --- */
+
+/* Custom CSS  */
+
